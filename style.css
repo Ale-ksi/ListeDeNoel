@@ -1,0 +1,140 @@
+:root {
+    /* vert sapin sombre */
+    --card: #11331f;
+    /* vert plus clair */
+    --text: #ffffff;
+    /* blanc lisible */
+    --accent: #d49800;
+    /* rouge Noël */
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, Arial
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("sapin.jpg");
+    color: var(--text);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 12px
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 4px;
+    margin-top: 10%;
+    color: var(--accent)
+}
+
+.header p {
+    opacity: .9;
+    font-size: 14px
+}
+
+
+.list-wrap {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+
+.list-container {
+    margin-top: 10%;
+    width: min(500px, 95%);
+    background: var(--card);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .4);
+}
+
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+
+.item {
+    background: rgba(255, 255, 255, .06);
+    padding: 28px 12px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item:hover {
+    background: rgba(255, 255, 255, .12)
+}
+
+
+.item a {
+    color: var(--text);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item h2 {
+    font-size: 17px;
+    color: var(--accent)
+}
+
+
+.item>a>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer {
+    margin-top: 10px;
+    opacity: .7;
+    text-align: center;
+    font-size: 13px
+}
+
+
+/* Responsive petites tailles */
+@media(max-width:420px) {
+    .item h2 {
+        font-size: 15px
+    }
+
+    .item>a>div p {
+        font-size: 14px
+    }
+
+    .list-container {
+        height: 75vh
+    }
+}

@@ -1,0 +1,101 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Liste de Noël — Onepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="page">
+        <header class="header">
+            <h1>Ma liste de Noël</h1>
+            <p>2025</p>
+        </header>
+
+
+        <!-- Conteneur centré horizontalement, occupe la hauteur et affiche la liste allant de bas en haut -->
+        <section class="list-wrap">
+            <div class="list-container">
+                <ul class="list">
+                    <!-- Les <li> les plus récents doivent être en bas visuellement -->
+                    <li class="item">
+                        <a href="https://www.fnac.com/Drone-Dji-Mini-4K-Blanc/a20792891/w-4">
+                            <h2>Drone DJI Mini 4K Blanc</h2>
+                            <div>
+                                <p>Fnac</p>
+                                <p>249.99€</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <h2>Casque de réalité virtuelle Meta Quest 2 128 Go Blanc </h2>
+                        <a href="https://www.leboncoin.fr/ck/consoles/oculus-quest-2-256">
+                            <div>
+                                <p>Fnac</p>
+                                <p>249.99€</p>
+                            </div>
+                        </a>
+                        <a
+                            href="https://www.fnac.com/Casque-de-realite-virtuelle-Meta-Quest-2-128-Go-Blanc/a16044628/w-4?oref=135341ef-a43a-3e30-5ad3-19868ef9a3ec">
+                            <div>
+                                <p>LeBonCoin</p>
+                                <p>100 ~ 175€</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a
+                            href="https://shop.imaginedragonsmusic.com/products/crest-black-hoodie?variant=42112546308183">
+                            <h2>Crest Black Hoodie </h2>
+                            <div>
+                                <p>Shop.imaginedragons</p>
+                                <p>80.00€</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a
+                            href="https://shop.imaginedragonsmusic.com/products/wake-up-black-long-sleeve?variant=42034405048407">
+                            <h2>Wake Up Black Long Sleeve </h2>
+                            <div>
+                                <p>Fnac</p>
+                                <p>55.00€</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a
+                            href="https://www.amazon.fr/Premium-Quality-Orthopedic-Cushion-FORTEM/dp/B01N6KTU29/ref=sxin_24_sbv_search_btf?content-id=amzn1.sym.e465c033-1722-4c7f-83fa-b78395dac004%3Aamzn1.sym.e465c033-1722-4c7f-83fa-b78395dac004&cv_ct_cx=coussin%2Bchaise%2Bgamer&keywords=coussin%2Bchaise%2Bgamer&pd_rd_i=B01N6KTU29&pd_rd_r=d59610c8-3323-474e-8a9a-0f517f2fbc5a&pd_rd_w=5bPtj&pd_rd_wg=WnLJI&pf_rd_p=e465c033-1722-4c7f-83fa-b78395dac004&pf_rd_r=ETEC7QT4K183ZQN8NYX8&qid=1765251657&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-07652b71-81e3-41f8-9097-e46726928fb7&th=1">
+                            <h2>Coussin de Chaise FORTEM </h2>
+                            <div>
+                                <p>Amazon</p>
+                                <p>42.99€</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <footer>Alexis MATILE</footer>
+    </main>
+
+
+    <!-- petit script facultatif pour scroller vers le bas au chargement -->
+    <script>
+        // Si vous voulez que la vue affiche le bas de la liste au chargement
+        document.addEventListener('readystatechange', () => {
+            if (document.readyState === 'complete') {
+                const list = document.querySelector('.list-container');
+                if (list) list.scrollTop = list.scrollHeight;
+            }
+        });
+    </script>
+</body>
+
+</html>
